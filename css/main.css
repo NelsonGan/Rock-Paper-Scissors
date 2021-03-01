@@ -1,0 +1,148 @@
+/* Applying background colour*/
+
+body {
+    background-color: #101010;
+    font-family: 'Architects Daughter';
+}
+
+/* Styling for the main tab*/
+
+#content {
+    margin-top: 10%;
+}
+
+#content h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+}
+
+#content span {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Styling for the result tab*/
+
+#result {
+    margin-top: 13%;
+    display: none;
+}
+
+#result p {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Styling for the try again button*/
+
+#button {
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    padding-top: 15px;
+    transition-duration: 0.5s;
+}
+
+#button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* Styling for the three buttons, rock, paper and scissors*/
+
+#content .choice {
+    display: flex;
+    justify-content: center;
+}
+
+.choice .rock {
+    width: 150px;
+    height: 150px;
+    margin: 0 40px;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    background-color: #101010;
+    transition-duration: 0.5s;
+}
+
+.rock:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 20px 5px #ffffff;
+    cursor: pointer;
+}
+
+.rock img {
+    display: block;
+    margin: auto;
+    padding-top: 9px;
+    width: 65%;
+    height: auto;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.choice .paper {
+    width: 150px;
+    height: 150px;
+    margin: 0 40px;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    background-color: #101010;
+    transition-duration: 0.5s;
+}
+
+.paper:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 20px 5px #ffffff;
+    cursor: pointer;
+}
+
+.paper img {
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+    width: 75%;
+    height: auto;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.choice .scissors {
+    width: 150px;
+    height: 150px;
+    margin: 0 40px;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    background-color: #101010;
+    transition-duration: 0.5s;
+}
+
+.scissors:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 20px 5px #ffffff;
+    cursor: pointer;
+}
+
+.scissors img {
+    display: block;
+    margin: auto;
+    padding-top: 12px;
+    width: 70%;
+    height: auto;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}

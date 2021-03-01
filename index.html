@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <script src="js/game.js"></script>
     </head>
     <body>
-        <h1>Rock Paper Scissors</h1>
+        <!--
+            Main tab
+        -->
+        <div id="content">
+            <h1>&lt;h1&gt; Rock Paper Scissors &lt;/h1&gt;</h1>
+            <span id="scores">0 W | 0 T | 0 L</span>
+            <div class="choice">
+                <div class="rock" onclick="play(0)"><img src="images/rock.png"></div>
+                <div class="paper" onclick="play(1)"><img src="images/paper.png"></div>
+                <div class="scissors" onclick="play(2)"><img src="images/scissors.png"></div>
+            </div>
+        </div>
+        <!--
+            Result tab
+        -->
+        <div id="result">
+            <p id="result-msg">&lt;p&gt; You picked rock, computer picked paper &lt;/p&gt;</p>
+            <p id="winlose-msg">&lt;script&gt; lose += 1 &lt;/script&gt;</p>
+            <center><div id="button" onclick="tryAgain();">Try Again</div></center>
+        </div>
     </body>
 </html>

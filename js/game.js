@@ -3,7 +3,7 @@ var winCount = 0;
 var loseCount = 0;
 var tieCount = 0;
 
-
+//All functions
 //Main play function
 function play(user) {
     let computer = getComputerChoice();
@@ -94,3 +94,20 @@ function getResults(user, computer) {
     }           
 }
 
+//Add event listener
+let choiceButtons = document.getElementById("choice").children;
+
+//Used let to maintain scope
+for (let i = 0; i < choiceButtons.length; i++) {
+    choiceButtons[i].addEventListener('click', () => {
+        play(i);
+    });
+}
+
+let tryButton = document.getElementById("button");
+
+tryButton.addEventListener('click', () =>
+{
+    tryAgain();
+}
+);

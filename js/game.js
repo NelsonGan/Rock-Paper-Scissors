@@ -30,7 +30,6 @@ function play(user) {
 }
 
 //Allow user to go back to main page
-
 function tryAgain() {
     //Hide result screen
     let resultscreen = document.getElementById("result");
@@ -42,14 +41,12 @@ function tryAgain() {
 }
 
 //Generate choice for computer
-
 function getComputerChoice() {
     let computer = Math.floor(Math.random() * 3);
     return computer;
 }
 
 //Translate number into words for printing
-
 function translateNumber(number) {
     if (number == 0) return "rock";
     if (number == 1) return "paper";
@@ -98,6 +95,7 @@ function getResults(user, computer) {
 let choiceButtons = document.getElementById("choice").children;
 
 //Used let to maintain scope
+//Used "let" instead of "var" because "let" allows for block scope
 for (let i = 0; i < choiceButtons.length; i++) {
     choiceButtons[i].addEventListener('click', () => {
         play(i);
